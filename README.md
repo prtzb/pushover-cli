@@ -2,7 +2,7 @@
 
 A simple CLI tool to send Pushover messages.
 
-I made this tool as an exercise to learn Go, so keep your expectations low on code quality. :)
+I made this tool as an exercise to learn Go and Github Actions, so keep your expectations on code quality low. :)
 
 ## Usage
 

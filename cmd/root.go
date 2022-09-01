@@ -20,10 +20,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-//var token, user = getEnvVars()
-//var push = pushover.New(token)
-//var recipient = pushover.NewRecipient(user)
-
 var rootCmd = &cobra.Command{
 	Use:   "pushover-cli",
 	Short: "A simple CLI tool to send Pushover messages.",
@@ -144,17 +140,3 @@ func getEnvVars() (APIToken string, userKey string) {
 
 	return APIToken, userKey
 }
-
-// func checkEnvVars() {
-// 	_, token_present := os.LookupEnv("PUSHOVER_API_TOKEN")
-// 	if !token_present {
-// 		fmt.Println("ERROR: PUSHOVER_API_TOKEN not set.")
-// 	}
-// 	_, key_present := os.LookupEnv("PUSHOVER_USER_KEY")
-// 	if !key_present {
-// 		fmt.Println("ERROR: PUSHOVER_USER_KEY not set.")
-// 	}
-// 	if !token_present || !key_present {
-// 		os.Exit(1)
-// 	}
-// }
